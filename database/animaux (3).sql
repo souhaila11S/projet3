@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3307
--- Généré le : mer. 20 mai 2026 à 13:30
+-- Généré le : ven. 05 juin 2026 à 12:45
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -45,10 +45,12 @@ CREATE TABLE `animaux` (
 INSERT INTO `animaux` (`id`, `nom`, `type`, `age`, `image`, `description`, `id_utilisateur`, `age_unite`) VALUES
 (9, 'Mimi', 'Chat', 4, '6a0b0e5f1a7e6.avif', 'Chat adorable âgé de 4 ans, situé à Tanger. Très gentil et cherche une nouvelle famille.', 6, 'ans'),
 (11, 'chien', 'Chien', 1, '6a0c6c267fff4.jpg', 'Chien adorable âgé de 5 ans, situé à Tanger. Très gentil, joueur', 10, 'ans'),
-(17, 'chat', 'Chat', 3, '6a0d82ea6967f.jpg', NULL, 10, 'ans'),
-(18, 'tss', 'Oiseau', 3, '6a0d926ea8ab8.jpg', 'khmozheo omhezo iheifeaj jzon', 10, 'mois'),
-(19, 'ghhh', 'Chien', 6, '6a0d960fad6e4.jpg', 'hhhhhh', 10, 'mois'),
-(20, 'kkk', 'Chat', 10, '6a0d970b6ff07.jpg', 'jjjfgfh', 10, 'mois');
+(17, 'chat', 'Chat', 3, '6a0d82ea6967f.jpg', 'Petit chaton roux de 3 mois, très propre et joueur. Actuellement à Tanger. Si vous êtes intéressé pour l\'adopter, contactez-moi sur WhatsApp.', 10, 'mois'),
+(18, 'calopsitte', 'Oiseau', 1, '6a0d926ea8ab8.jpg', '\"Magnifique calopsitte de 1 an, très vive et sociable. Actuellement à Tanger. Si vous êtes intéressé pour l\'adopter, contactez-moi sur WhatsApp.', 10, 'ans'),
+(19, 'mimita', 'Chat', 1, '6a0d960fad6e4.jpg', 'Petit chaton gris de 1 mois, très propre et joueur. Actuellement à Tanger. Si vous êtes intéressé pour l\'adopter, contactez-moi sur WhatsApp.', 10, 'mois'),
+(20, 'les chatons', 'Chat', 1, '6a0d970b6ff07.jpg', 'Magnifiques chatons de 1 mois, très propres et joueurs. Plusieurs couleurs disponibles. Actuellement à Tanger. Si vous êtes intéressé pour adopter l\'un d\'entre eux, contactez-moi sur WhatsApp', 10, 'mois'),
+(22, 'Canari', 'Oiseau', 7, '6a0ed23717a83.jpg', 'Beau canari jaune, très calme et chanteur. Actuellement à Tanger. Si vous êtes intéressé pour l\'adopter, contactez-moi sur WhatsApp.', 10, 'mois'),
+(24, 'chien', 'Chien', 2, '6a1d69ab02767.jpg', 'Joli petit chiot de 2 mois, très mignon et joueur. Actuellement à Tanger. Si vous êtes intéressé pour l\'adopter, contactez-moi sur WhatsApp.', 6, 'mois');
 
 -- --------------------------------------------------------
 
@@ -122,7 +124,9 @@ INSERT INTO `utilisateurs` (`id`, `nom`, `email`, `mot_de_passe`, `telephone`, `
 (7, 'mouhamed', 'mouhamed11@gmail.com', '$2y$10$Y40pUeLx2qLLcJ7AGoZpyeDdziF/0s7nRmbdii4nRRAQ9Oupl0mAC', '0604684773', '0676765434', 'user'),
 (8, 'ahmed', 'ahmed22@gmail.com', '$2y$10$JH0Qch5NCzkTogQlH5N0QOPhTZ26Nd1pYzkZzCqAjf0ysfEdJzDZe', '06989876', '0676767676', 'user'),
 (9, 'sara', 'sara2@gmail.com', '$2y$10$anayOT3/ezi39PZJMMGu7uMkRjTsu0JC80YxwgaLCh41jT0DXd3FC', '0604684773', '0676765434', 'user'),
-(10, 'kaoutar', 'kaoutar33@gmail.com', '$2y$10$F1PdGwYWjxi10j42GR1UuejcsY5/Go1t87mzaxIsvFNwqNbmhK/JS', '066654545', '066654545', 'user');
+(10, 'kaoutar', 'kaoutar33@gmail.com', '$2y$10$F1PdGwYWjxi10j42GR1UuejcsY5/Go1t87mzaxIsvFNwqNbmhK/JS', '066654545', '066654545', 'user'),
+(11, 'mouhamed', 'mouhamed111@gmail.com', '$2y$10$C39YR.FtWIWalfJ3TFk1p.xworo6UGwSjUUToKO6qZruasKOFTSzy', '0604684773', '0676765434', 'user'),
+(12, 'souhaila', 'souhailalh77@gmail.coom', '$2y$10$NtsBsOUoeg.wFbrnU5mjPexQffGlcwaheuH51l.VmY6eWSCvW6C8a', '+212604694773', '0676765432', 'user');
 
 --
 -- Index pour les tables déchargées
@@ -163,7 +167,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `animaux`
 --
 ALTER TABLE `animaux`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT pour la table `commentaires`
@@ -181,7 +185,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Contraintes pour les tables déchargées

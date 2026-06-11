@@ -37,7 +37,7 @@ $tab = $_GET['tab'] ?? 'animaux';
 <body>
 <nav class="navbar scrolled">
   <div class="nav-container">
-    <a href="index.php" class="nav-logo"><i class="fa-solid fa-paw"></i><span>PetShelter</span></a>
+    <a href="index.php" class="nav-logo"><i class="fa-solid fa-paw"></i><span>Animozen</span></a>
     <ul class="nav-links">
       <li><a href="index.php">Site</a></li>
       <li><a href="admin.php?tab=animaux" <?= $tab==='animaux'?'class="active"':'' ?>>Animaux (<?= count($animaux) ?>)</a></li>

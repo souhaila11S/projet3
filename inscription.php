@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="form-group"><label class="form-label">Mot de passe *</label><input type="password" name="mot_de_passe" class="form-input" placeholder="Minimum 6 caractères" required/></div>
         <div class="form-row">
-          <div class="form-group"><label class="form-label">Téléphone</label><input type="tel" name="telephone" class="form-input" placeholder="+212 6 00 00 00 00"/></div>
+          <!-- <div class="form-group"><label class="form-label">Téléphone</label><input type="tel" name="telephone" class="form-input" placeholder="+212 6 00 00 00 00"/></div> -->
           <div class="form-group"><label class="form-label">WhatsApp</label><input type="tel" name="whatsapp" class="form-input" placeholder="212600000000"/></div>
         </div>
         <button type="submit" class="btn-submit">Créer mon compte</button>
